@@ -1,248 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fdc021" />
     <title>Dream Agency - Landing Page</title>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="container navigation">
-            <nav class="navBar">
-                <ul class="navLinks MobileHidden">
-                    <li>
-                        <a href="/" class="navItemLinks">Home <div class="navLine"></div></a>
-                        
-                    </li>
-                    <li>
-                        <a href="/" class="navItemLinks">About Us <div class="navLine"></div></a>
-                    </li>
-                    <li>
-                        <a href="/" class="navItemLinks">Services <div class="navLine"></div></a>
-                    </li>
-                    <li>
-                        <a href="/" class="navItemLinks">Contact Us <div class="navLine"></div></a>
-                    </li>
-                </ul>
-                <h1 class="logo">
-                    Dream Agency
-                </h1>
+      <div class="container navigation">
+        <nav class="navBar">
+          <ul class="navLinks MobileHidden">
+            <li>
+              <a href="/" class="navItemLinks"
+                >Home
+                <div class="navLine"></div
+              ></a>
+            </li>
+            <li>
+              <a href="/" class="navItemLinks"
+                >About Us
+                <div class="navLine"></div
+              ></a>
+            </li>
+            <li>
+              <a href="/" class="navItemLinks"
+                >Services
+                <div class="navLine"></div
+              ></a>
+            </li>
+            <li>
+              <a href="/" class="navItemLinks"
+                >Contact Us
+                <div class="navLine"></div
+              ></a>
+            </li>
+          </ul>
+          <h1 class="logo">Dream Agency</h1>
 
-                <div class="navSocial">
-                    <span>
-                        <a href="/" class="navSocialMedia">
-                            <div>
-                                <img src="./assets/icon/fb.svg" alt="" height="22px">
-                            </div>
-                        </a>
-                    </span>
-
-                    <span>
-                        <a href="/" class="navSocialMedia">
-                            <div>
-                                <img src="./assets/icon/in.svg" alt="" height="18px">
-                            </div>
-                        </a>
-                    </span>
-
-                    <span>
-                        <a href="/" class="navSocialMedia">
-                            <div>
-                                <img src="./assets/icon/insta.svg" alt="" height="20px">
-                            </div>
-                        </a>
-                    </span>
-
+          <div class="navSocial">
+            <span>
+              <a href="/" class="navSocialMedia">
+                <div>
+                  <img src="./assets/icon/fb.svg" alt="fb_Icon" height="22px" />
                 </div>
-            </nav>
-        </div>
-        
-        <img src="./assets/img/heroBg.png" alt="" class="heroBg">
-        <div class="heroConatiner container">
-            <div class="heroTxtContent">
-                <h2 class="heroTxt">
-                    We Help you <span class="heroThinTxt">to grow your <sapn class="heroLine">Business </sapn></span>
-                </h2>
+              </a>
+            </span>
 
-                <p class="heroContent">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
+            <span>
+              <a href="/" class="navSocialMedia">
+                <div>
+                  <img
+                    src="./assets/icon/in.svg"
+                    alt="linkedin Icon"
+                    height="18px"
+                  />
+                </div>
+              </a>
+            </span>
 
-                <a href="/" class="btn">GET STARTED</a>
-            </div>
-            <div class="heroImg">
-                <img src="./assets/img/heroImg.png" alt="" width="110%">
-            </div>
+            <span>
+              <a href="/" class="navSocialMedia">
+                <div>
+                  <img
+                    src="./assets/icon/insta.svg"
+                    alt="Instergram Icon"
+                    height="20px"
+                  />
+                </div>
+              </a>
+            </span>
+          </div>
+
+          <input type="checkbox" id="check" class="menuCheck" />
+          <label for="check" class="navIcon">
+            <img
+              src="./assets/icon/menu.svg"
+              alt="menuIcon"
+              class="menuIcon"
+              onclick="changeNavBar(0);"
+            />
+            <img
+              src="./assets/icon/close.png"
+              alt="closeIcon"
+              class="closeIcon"
+              onclick="changeNavBar(1);"
+            />
+          </label>
+        </nav>
+      </div>
+
+      <img
+        src="./assets/img/heroBg.png"
+        alt="Hero Content Image Background"
+        class="heroBg"
+      />
+      <div class="heroConatiner container">
+        <div class="heroTxtContent">
+          <h2 class="heroTxt">
+            We Help you
+            <span class="heroThinTxt"
+              >to grow your <sapn class="heroLine">Business </sapn></span
+            >
+          </h2>
+
+          <p class="heroContent">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+
+          <a href="/" class="btn">GET STARTED</a>
         </div>
+        <div class="heroImg">
+          <img
+            src="./assets/img/heroImg.png"
+            alt="Hero Content Image"
+            width="110%"
+            height="auto"
+          />
+        </div>
+      </div>
     </header>
     <main>
-        <section class="ourServiceSection container">
-            <div class="serviceBg"></div>
-                <h3 class="heroTxt subHeadding">
-                    What we do <br> <span class="heroThinTxt">For Your Business</span>
-                </h3>
+      <section class="ourServiceSection container">
+        <div class="serviceBg"></div>
+        <h3 class="heroTxt subHeadding">
+          What we do <br />
+          <span class="heroThinTxt">For Your Business</span>
+        </h3>
 
-                <div class="servicessBox">
-                    <div class="arrowBox">
-                        <div class="arrowItem" width="40px" height="40px">
-                            <img src="./assets/icon/arrowLeft.svg" alt="">
-                        </div>
-
-                        <div class="arrowItem" width="40px" height="40px">
-                            <img src="./assets/icon/arrowRight.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="serviceItem">
-                        <div class="serviceImg">
-                            <img src="./assets/icon/world.svg" alt="" height="32" width="32">
-                        </div>
-                        <h4>Website Design</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>
-
-                    <div class="serviceItem">
-                        <div class="serviceImg">
-                            <img src="./assets/icon/computer.svg" alt="" height="32" width="32">
-                        </div>
-                        <h4>Web Development</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>
-
-                    <div class="serviceItem">
-                        <div class="serviceImg">
-                            <img src="./assets/icon/mobile.svg" alt="" height="32" width="32">
-                        </div>
-                        <h4>Mobile APP Development</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>
-
-                    <div class="serviceItem">
-                        <div class="serviceImg">
-                            <img src="./assets/icon/rocket.svg" alt="" height="32" width="32">
-                        </div>
-                        <h4>Marketing</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>
-                </div>            
-        </section>
-
-        <section class="aboutUsSection container">
-            <div class="aboutUsImg">
-                <img src="./assets/img/AboutusImg.png" alt="" width="110%">
-            </div>
-            <div>
-                <h3 class="heroTxt subHeadding">
-                    About Us <br> <span class="heroThinTxt">Fake or <span class="aboutUsLine">Real</span> </span>
-                </h3>
-
-                <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-
-                <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-
-                <a href="/" class="btn">EXPLORE MORE</a>
-            </div>
-        </section>
-
-        <section class="recentWorkSection container">
-            <div class="recentBg"></div>
-            <div class="recentWorkText">
-                <h3 class="heroTxt subHeadding">
-                    Our Recent Work <br> <span class="heroThinTxt">By Our <span class="aboutUsLine">Experts</span></span>
-                </h3>
-                <p class="recentWorkContentText">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div class="servicessBox">
+          <div class="arrowBox">
+            <div class="arrowItem" width="40px" height="40px">
+              <img src="./assets/icon/arrowLeft.svg" alt="left arrow" />
             </div>
 
-            <div class="recentWorkBox">
-                <div class="arrowBox">
-                    <div class="arrowItem" width="40px" height="40px">
-                        <img src="./assets/icon/arrowLeft.svg" alt="">
-                    </div>
-
-                    <div class="arrowItem" width="40px" height="40px">
-                        <img src="./assets/icon/arrowRight.svg" alt="">
-                    </div>
-                </div>
-                <div class="serviceItem">
-                    <div class="recentWorkImg">
-                        <img src="./assets/img/recentWork1.jpg" alt="" height="auto" width="200px">
-                        <img src="./assets/img/recentWorkMobile1.jpg" alt="" height="auto" width="80px">
-                    </div>
-                    <div class="recentWorkFooter">
-                        <h4>UI Soup</h4>
-                        <a href="/" class="recentWorkBtn">View Work</a>
-                    </div>
-                </div>
-             
-                <div class="serviceItem">
-                    <div class="recentWorkImg">
-                        <img src="./assets/img/recentWork2.jpg" alt="" height="auto" width="200px">
-                        <img src="./assets/img/recentWorkMobile2.jpg" alt="" height="auto" width="80px">
-                    </div>
-                    <div class="recentWorkFooter">
-                        <h4>Goldcrown Labs</h4>
-                        <a href="/" class="recentWorkBtn">View Work</a>
-                    </div>
-                </div>
-
-                <div class="serviceItem">
-                    <div class="recentWorkImg">
-                        <img src="./assets/img/recentWork3.jpg" alt="" height="auto" width="200px">
-                        <img src="./assets/img/recentWorkMobile3.png" alt="" height="auto" width="80px">
-                    </div>
-                    <div class="recentWorkFooter">
-                        <h4>Close Concierge</h4>
-                        <a href="/" class="recentWorkBtn">View Work</a>
-                    </div>
-                </div>
-            </div> 
-        </section>
-
-        <section class="testimonialSection container">
-            <h3 class="heroTxt subHeadding">
-                Our Testimonials <br> <span class="heroThinTxt">What Our Clients Are  <span class="aboutUsLine">Saying</span></span>
-            </h3>
-
-            <div class="testimonialSectionContent">
-                <div>
-                    <img src="./assets/icon/comma.svg" alt="" height="62" width="62">
-                    <p>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                    </p>
-                    <h4><img src="./assets/icon/line.svg" alt="">UI Soup</h4>
-                </div>
-                <div>
-                    <img src="./assets/icon/comma.svg" alt="" height="62" width="62">
-                    <p>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                    </p>
-                    <h4><img src="./assets/icon/line.svg" alt="">UI Soup</h4>
-                </div>
+            <div class="arrowItem" width="40px" height="40px">
+              <img src="./assets/icon/arrowRight.svg" alt="right arrow" />
             </div>
-        </section>
+          </div>
+          <div class="serviceItem">
+            <div class="serviceImg">
+              <img
+                src="./assets/icon/world.svg"
+                alt="world Icon"
+                height="32"
+                width="32"
+              />
+            </div>
+            <h4>Website Design</h4>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
+            </p>
+          </div>
+
+          <div class="serviceItem">
+            <div class="serviceImg">
+              <img
+                src="./assets/icon/computer.svg"
+                alt="computer icon"
+                height="32"
+                width="32"
+              />
+            </div>
+            <h4>Web Development</h4>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
+            </p>
+          </div>
+
+          <div class="serviceItem">
+            <div class="serviceImg">
+              <img
+                src="./assets/icon/mobile.svg"
+                alt="mobile icon"
+                height="32"
+                width="32"
+              />
+            </div>
+            <h4>Mobile APP Development</h4>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
+            </p>
+          </div>
+
+          <div class="serviceItem">
+            <div class="serviceImg">
+              <img
+                src="./assets/icon/rocket.svg"
+                alt="rocket icon"
+                height="32"
+                width="32"
+              />
+            </div>
+            <h4>Marketing</h4>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutUsSection container">
+        <div class="aboutUsImg">
+          <img
+            src="./assets/img/AboutusImg.png"
+            alt="aboutUs Section Image"
+            width="110%"
+          />
+        </div>
+        <div>
+          <h3 class="heroTxt subHeadding">
+            About Us <br />
+            <span class="heroThinTxt"
+              >Fake or <span class="aboutUsLine">Real</span>
+            </span>
+          </h3>
+
+          <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+
+          <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+
+          <a href="/" class="btn">EXPLORE MORE</a>
+        </div>
+      </section>
+
+      <section class="recentWorkSection container">
+        <div class="recentBg"></div>
+        <div class="recentWorkText">
+          <h3 class="heroTxt subHeadding">
+            Our Recent Work <br />
+            <span class="heroThinTxt"
+              >By Our <span class="aboutUsLine">Experts</span></span
+            >
+          </h3>
+          <p class="recentWorkContentText">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+
+        <div class="recentWorkBox">
+          <div class="arrowBox">
+            <div class="arrowItem" width="40px" height="40px">
+              <img src="./assets/icon/arrowLeft.svg" alt="left arrow" />
+            </div>
+
+            <div class="arrowItem" width="40px" height="40px">
+              <img src="./assets/icon/arrowRight.svg" alt=" right arrow" />
+            </div>
+          </div>
+          <div class="serviceItem">
+            <div class="recentWorkImg">
+              <img
+                src="./assets/img/recentWork1.jpg"
+                alt="recent Project Image"
+                height="auto"
+                width="200px"
+              />
+              <img
+                src="./assets/img/recentWorkMobile1.jpg"
+                alt="recent Project Image"
+                height="auto"
+                width="80px"
+              />
+            </div>
+            <div class="recentWorkFooter">
+              <h4>UI Soup</h4>
+              <a href="/" class="recentWorkBtn">View Work</a>
+            </div>
+          </div>
+
+          <div class="serviceItem">
+            <div class="recentWorkImg">
+              <img
+                src="./assets/img/recentWork2.jpg"
+                alt="recent Project Image"
+                height="auto"
+                width="200px"
+              />
+              <img
+                src="./assets/img/recentWorkMobile2.jpg"
+                alt="recent Project Image"
+                height="auto"
+                width="80px"
+              />
+            </div>
+            <div class="recentWorkFooter">
+              <h4>Goldcrown Labs</h4>
+              <a href="/" class="recentWorkBtn">View Work</a>
+            </div>
+          </div>
+
+          <div class="serviceItem">
+            <div class="recentWorkImg">
+              <img
+                src="./assets/img/recentWork3.jpg"
+                alt="recent Project Image"
+                height="auto"
+                width="200px"
+              />
+              <img
+                src="./assets/img/recentWorkMobile3.png"
+                alt="recent Project Image"
+                height="auto"
+                width="80px"
+              />
+            </div>
+            <div class="recentWorkFooter">
+              <h4>Close Concierge</h4>
+              <a href="/" class="recentWorkBtn">View Work</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonialSection container">
+        <h3 class="heroTxt subHeadding">
+          Our Testimonials <br />
+          <span class="heroThinTxt"
+            >What Our Clients Are <span class="aboutUsLine">Saying</span></span
+          >
+        </h3>
+
+        <div class="testimonialSectionContent">
+          <div>
+            <img
+              src="./assets/icon/comma.svg"
+              alt="comma icon"
+              height="62"
+              width="62"
+            />
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not
+              only five centuries.
+            </p>
+            <h4><img src="./assets/icon/line.svg" alt="" />UI Soup</h4>
+          </div>
+          <div>
+            <img
+              src="./assets/icon/comma.svg"
+              alt="comma icon"
+              height="62"
+              width="62"
+            />
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not
+              only five centuries.
+            </p>
+            <h4><img src="./assets/icon/line.svg" alt="line" />UI Soup</h4>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <section class="footerSection container">
-            <div>
-                <h2 class="logo footerLogo">Dream Agency</h2>
-                <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                </p>
-                <h4>GET IN TOUCH</h4>
+      <section class="footerSection container">
+        <div>
+          <h2 class="logo footerLogo">Dream Agency</h2>
+          <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries.
+          </p>
+          <h4>GET IN TOUCH</h4>
 
-                <div class="emailBox">
-                    <input type="email" class="email" placeholder="Enter Your Email">
-                    <a href="/" class="emailBtn">SEND</a>
-                </div>
-            </div>
-            <div class="mapBox">
-                <img src="./assets/img/map.png" alt="" width="100%">
-            </div>
-        </section>
+          <div class="emailBox">
+            <input type="email" class="email" placeholder="Enter Your Email" />
+            <a href="/" class="emailBtn">SEND</a>
+          </div>
+        </div>
+        <div class="mapBox">
+          <iframe
+            width="100%"
+            height="300px"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Colombo%20+(Location)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+          <a href="https://www.versicherungen.at/">Versicherungen.at</a>
+          <script
+            type="text/javascript"
+            src="https://embedmaps.com/google-maps-authorization/script.js?id=9ae633e95d695e673bdcdadb735c3c12f8a53871"
+          ></script>
+        </div>
+      </section>
     </footer>
-</body>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
